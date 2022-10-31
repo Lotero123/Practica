@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,activeacute]{babel}
+\usepackage{mathtools}
+\usepackage{graphicx}
+
+
+\begin{document}
+1. Sea $M=(\{q_0,q_1,q_2\}, \{a,b\}, \delta, q_0, \{q_1\})$ un AFD con:\\
+
+\begin{table}[h!]
+\begin{tabular}{c|c|c}
+  $\delta(q,\sigma)$ & $a$ & $b$\\
+  \hline
+  $q_0$& $q_1$ & $q_2$\\
+  \hline
+  $q_1$& $q_2$ & $q_2$\\
+  \hline
+  $q_2$& $q_2$ & $q_2$\\
+  
+\end{tabular}
+\end{table}
+
+
+
+
+
+
+2.
+\section*{}\includegraphics{gc.png}
+
+
+
+
+
+
+
+
+
+\begin{verbatim}
+[
+  {
+    "name" : "a",
+    "representation" : {
+      "K" : ["q0", "q1", "q2"],
+      "A" : ["a", "b"],
+      "s" : "q0",
+      "F" : ["q1"],
+      "t" : 
+[["q0", "a", "q1"],
+["q0", "b", "q2"],
+["q1", "a", "q2"],
+["q1", "b", "q2"],
+["q2", "a", "q2"],
+["q2", "b", "q2"]]
+      }
+  }
+]
+\end{verbatim}
+\end{document}
